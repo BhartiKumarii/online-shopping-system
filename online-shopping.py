@@ -10,7 +10,7 @@ from mysql.connector import Error
 from tabulate import tabulate
 
 try:
-    conn=c.connect(host="localhost",username="root",password="Demo@100",database="newdb")
+    conn=c.connect(host="localhost",username="root",password="-------",database="newdb")
     if conn.is_connected():
         print(conn.get_server_info())
         print()
@@ -1052,5 +1052,6 @@ except Error as e:
     print(e)
 finally:
     conn.close()
+
 
 
